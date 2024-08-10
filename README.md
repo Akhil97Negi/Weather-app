@@ -26,7 +26,7 @@ Ensure you have the following installed:
 
 ### Setup
 
-1. **Clone the Repository**
+ **Clone the Repository**
 
    Open your terminal and run:
    ```bash
@@ -35,3 +35,5 @@ Ensure you have the following installed:
    -npm i
    -npm run dev
    -run the baackend also by  npx json-server --watch db.json --port 5000 
+## demo video
+  You can view the demo video (https://www.loom.com/share/b9c3473f5ad047748c0da56ff7871520?sid=beb91771-773e-4c7e-9418-7a389b9de04b)

@@ -14,7 +14,7 @@ The Weather Dashboard is a web application that provides weather information for
 
 ## Deploy Link
 
-You can view the live application [here](https://weather-khaki-iota.vercel.app/).
+You can view the live application [here](https://weatherapp-blond-ten.vercel.app/).
 
 ## How to Start
 
@@ -24,9 +24,11 @@ Ensure you have the following installed:
 - Node.js (version 14 or later)
 - npm (Node Package Manager)
 
+### demo video
+  You can view the demo video (https://www.loom.com/share/b9c3473f5ad047748c0da56ff7871520?sid=beb91771-773e-4c7e-9418-7a389b9de04b)
 ### Setup
 
-1. **Clone the Repository**
+ **Clone the Repository**
 
    Open your terminal and run:
    ```bash
@@ -34,4 +36,7 @@ Ensure you have the following installed:
    cd <repository-directory>
    -npm i
    -npm run dev
-   -run the baackend also by  npx json-server --watch db.json --port 5000 
+   -run the baackend also by  npx json-server --watch db.json --port 5000
+  
+
+

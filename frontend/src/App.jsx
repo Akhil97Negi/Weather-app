@@ -17,7 +17,7 @@ function App() {
     fetch('http://localhost:5000/favorites')
       .then(response => response.json())
       .then(data => setFavorites(data))
-      .catch(error => console.error('Error fetching favorites:', error));
+      .catch(error => console.log('Error fetching favorites:', error));
   }, []);
 
   const handleCitySearch = async (city) => {

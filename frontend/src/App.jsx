@@ -4,6 +4,7 @@ import Search from './components/Search';
 import WeatherDisplay from './components/WeatherDisplay';
 import NavBar from './components/Navbar';
 import Favorites from './components/Favroites';  
+import './App.css'; 
 
 function App() {
   const [currentCity, setCurrentCity] = useState('');
@@ -11,8 +12,8 @@ function App() {
   const [forecastData, setForecastData] = useState(null);
   const [favorites, setFavorites] = useState([]);
 
+  
   useEffect(() => {
-    
     fetch('http://localhost:5000/favorites')
       .then(response => response.json())
       .then(data => setFavorites(data))
@@ -25,7 +26,6 @@ function App() {
       const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
       const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
 
-      // Fetch weather data
       const weatherResponse = await fetch(weatherUrl);
       const weatherData = await weatherResponse.json();
 
@@ -34,7 +34,6 @@ function App() {
         return;
       }
 
-      // Fetch forecast data
       const forecastResponse = await fetch(forecastUrl);
       const forecastData = await forecastResponse.json();
 

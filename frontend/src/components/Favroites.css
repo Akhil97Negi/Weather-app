@@ -1,60 +1,72 @@
 .favorites-container {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    max-width: 400px;
-    margin: 20px auto;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .favorites-title {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .favorites-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .favorites-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .favorite-city-name {
-    cursor: pointer;
-    font-weight: bold;
-    color: #007bff;
-  }
-  
-  .favorite-city-name:hover {
-    text-decoration: underline;
-  }
-  
-  .remove-favorite-btn {
-    background-color: #ff4d4f;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
-  .remove-favorite-btn:hover {
-    background-color: #ff7875;
-  }
-  
-  .no-favorites {
-    text-align: center;
-    color: #999;
-  }
-  
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px); 
+}
+
+.favorites-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.favorites-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.favorites-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+
+.favorites-item:hover {
+  background: rgba(255, 255, 255, 0.2); 
+}
+
+.favorite-city-name {
+  cursor: pointer;
+  font-weight: bold;
+  color: #1e90ff; 
+  transition: color 0.3s ease;
+}
+
+.favorite-city-name:hover {
+  text-decoration: underline;
+  color: #87ceeb; 
+}
+
+.remove-favorite-btn {
+  background: rgba(255, 0, 0, 0.7); 
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.remove-favorite-btn:hover {
+  background: rgba(255, 0, 0, 1); 
+  transform: scale(1.05); 
+}
+
+.no-favorites {
+  text-align: center;
+  color: #aaa; 
+}

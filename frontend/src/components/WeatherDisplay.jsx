@@ -5,18 +5,20 @@ function WeatherDisplay({ weatherData, forecastData, onAddFavorite, isFavorite }
   const [unit, setUnit] = useState('C');
 
   const convertTemperature = (temp) => {
-    if (unit === 'C') {
-      return temp; 
-    } else {
-      return (temp * 9/5) + 32;
-    }
+    return unit === 'C' ? temp : (temp * 9/5) + 32;
   };
 
   const toggleUnit = () => {
-    if (unit === 'C') {
-      setUnit('F'); 
-    } else {
-      setUnit('C'); 
+    setUnit(unit === 'C' ? 'F' : 'C');
+  };
+
+  const handleAddFavorite = async (city) => {
+    try {
+      await onAddFavorite(city);
+      alert(`"${city}" has been added to your favorites!`); // Show alert message
+    } catch (error) {
+      console.error('Error adding favorite:', error);
+      alert('Failed to add favorite. Please try again.'); // Error alert message
     }
   };
 
@@ -26,7 +28,7 @@ function WeatherDisplay({ weatherData, forecastData, onAddFavorite, isFavorite }
     <div className="weather-card">
       <div className="weather-header">
         <h2>{weatherData.name}</h2>
-        <button onClick={() => onAddFavorite(weatherData.name)}>
+        <button onClick={() => handleAddFavorite(weatherData.name)}>
           {isFavorite ? 'Remove from Favorites' : 'Add to Favorites'}
         </button>
       </div>

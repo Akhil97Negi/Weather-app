@@ -1,0 +1,105 @@
+/* Simple Weather Card */
+.weather-card {
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 15px;
+    width: 300px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* Header with City Name and Button */
+.weather-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.weather-header h2 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.weather-header button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.weather-header button:hover {
+    background-color: #0056b3;
+}
+
+/* Weather Description */
+.weather-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Temperature */
+.temperature {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Toggle Unit Button */
+.toggle-unit-btn {
+    background-color: #28a745; /* Green */
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.toggle-unit-btn:hover {
+    background-color: #218838; /* Darker Green */
+}
+
+/* 5-Day Forecast Header */
+.weather-card h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Forecast Grid */
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+/* Individual Forecast Day */
+.forecast-day {
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-day p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .weather-card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .weather-header {
+        flex-direction: column;
+    }
+
+    .forecast-grid {
+        grid-template-columns: 1fr;
+    }
+}

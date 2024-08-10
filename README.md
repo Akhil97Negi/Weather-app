@@ -14,7 +14,7 @@ The Weather Dashboard is a web application that provides weather information for
 
 ## Deploy Link
 
-You can view the live application [here](https://weather-khaki-iota.vercel.app/).
+You can view the live application [here](https://weatherapp-blond-ten.vercel.app/).
 
 ## How to Start
 

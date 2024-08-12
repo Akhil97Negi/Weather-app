@@ -25,7 +25,7 @@ Ensure you have the following installed:
 - npm (Node Package Manager)
 
 ### demo video
-  You can view the demo video (https://www.loom.com/share/b9c3473f5ad047748c0da56ff7871520?sid=beb91771-773e-4c7e-9418-7a389b9de04b)
+  You can view the demo video (https://www.loom.com/share/21283e33916443d3890db010e53d50c7?sid=cd246c1d-cbd6-459c-9ea3-f953c3b19a60)
 ### Setup
 
  **Clone the Repository**

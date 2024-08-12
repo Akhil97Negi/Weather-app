@@ -14,7 +14,7 @@ The Weather Dashboard is a web application that provides weather information for
 
 ## Deploy Link
 
-You can view the live application [here](https://weatherapp-blond-ten.vercel.app/).
+You can view the live application [here](https://weather-khaki-iota.vercel.app/).
 
 ## How to Start
 
@@ -36,7 +36,7 @@ Ensure you have the following installed:
    cd <repository-directory>
    -npm i
    -npm run dev
-   -run the baackend also by  npx json-server --watch db.json --port 5000
+   
   
 
 

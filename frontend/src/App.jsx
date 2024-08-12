@@ -15,7 +15,7 @@ function App() {
   
   useEffect(() => {
     fetch('http://localhost:5000/favorites')
-      .then(response => response.json())
+      .then(res => res.json())
       .then(data => setFavorites(data))
       .catch(error => console.log('Error fetching favorites:', error));
   }, []);
@@ -26,16 +26,16 @@ function App() {
       const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
       const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
 
-      const weatherResponse = await fetch(weatherUrl);
-      const weatherData = await weatherResponse.json();
+      const weatherres = await fetch(weatherUrl);
+      const weatherData = await weatherres.json();
 
       if (weatherData.cod !== 200) {
         alert('City not found!');
         return;
       }
 
-      const forecastResponse = await fetch(forecastUrl);
-      const forecastData = await forecastResponse.json();
+      const forecastres = await fetch(forecastUrl);
+      const forecastData = await forecastres.json();
 
       setWeatherData(weatherData);
       setForecastData(forecastData);

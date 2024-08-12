@@ -37,7 +37,7 @@
   font-size: 1rem;
   padding: 8px 12px;
   transition: color 0.3s ease, background-color 0.3s ease;
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 5px; 
 }
 
 .navbar-links a:hover {
@@ -62,14 +62,13 @@
   left: 0;
 }
 
-/* Menu Icon for Small Screens */
+
 .navbar-menu-icon {
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: row;

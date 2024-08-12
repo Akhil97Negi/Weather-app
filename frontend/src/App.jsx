@@ -14,7 +14,7 @@ function App() {
 
   
   useEffect(() => {
-    fetch('http://localhost:5000/favorites')
+    fetch('https://json-qcqk.onrender.com/favorites')
       .then(res => res.json())
       .then(data => setFavorites(data))
       .catch(error => console.log('Error fetching favorites:', error));
@@ -54,7 +54,7 @@ function App() {
 
     const newFavorite = { city };
     try {
-      await fetch('http://localhost:5000/favorites', {
+      await fetch('https://json-qcqk.onrender.com/favorites', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ function App() {
   const removeFavorite = async (city) => {
     const updatedFavorites = favorites.filter(fav => fav.city !== city);
     try {
-      await fetch(`http://localhost:5000/favorites/${city}`, {
+      await fetch(`https://json-qcqk.onrender.com/favorites/${city}`, {
         method: 'DELETE',
       });
       setFavorites(updatedFavorites);
